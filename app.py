@@ -11,5 +11,10 @@ swagger = Swagger(app, template_file='swagger.yml')
 
 app.register_blueprint(api_bp)
 
+# Redirect root URL to Swagger UI
+@app.route('/')
+def redirect_to_docs():
+    return redirect('/apidocs/')
+
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=5000)
