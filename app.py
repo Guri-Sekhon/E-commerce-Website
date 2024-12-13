@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect
 from api import api_bp
 from database import insert_static_data 
 from flasgger import Swagger
