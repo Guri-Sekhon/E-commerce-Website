@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 def get_db():
-    client = MongoClient("mongodb+srv://simpysekhonsekhon414:<4x6PiNPe7NdCX9RR>@cluster1.jpr77.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
+    client = MongoClient("mongodb+srv://simpysekhonsekhon414:4x6PiNPe7NdCX9RR@cluster1.jpr77.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
     db = client['ecommerce_db'] 
     return db 
             
